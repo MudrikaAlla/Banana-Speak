@@ -1,5 +1,8 @@
-console.log("Hello,check!");
-var name=prompt("Please enter your name: ")
+var btnTranslate = document.querySelector("#btn-translate");
 
-var welcomeMessage = "This is working, "+name;
-alert(welcomeMessage);
+var txtInput = document.querySelector("#txt-input");
+
+btnTranslate.addEventListener("click",function clickEventHandler(){
+    console.log("Clicked!");
+    console.log("input",txtInput.value);
+})
